@@ -1,0 +1,303 @@
+/* PARTE DA NAVEÇÃO */
+* {
+    font-family: REM, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #00107C;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+#menu{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    background-color:  greenyellow;
+}
+
+#menu li {
+    padding: 10px;
+    font-size: 12px;
+}
+
+#menu a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#menu li:hover{
+       background-color: rgba(255, 254, 254, 0.863);
+       border-radius: 5px;
+    }
+
+/* PARTE DA NAVEÇÃO */
+
+/* PAG - HOME */
+
+.homeOficial{
+     justify-content: center;
+     flex-direction: column;
+     display: flex;
+     padding: 1.5rem;
+}
+
+.cahome{
+    margin: 10px;
+}
+
+.tituloHome{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 1.3em;
+    flex-direction: column;
+    color: #00ff55;
+}
+
+.card-home{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6em;
+}
+
+.di4{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6em;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+} 
+
+/* PAG - HOME */
+
+/* PAG - EXERCÍCIOS */
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+main {
+    width: 100%;
+    height: 92vh;
+    background-color: #0C1323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-top: 20px solid greenyellow;
+    width: 300px;
+    height: 500px;
+    background-color: #1E204C;
+    border-radius: 15px;
+    padding: 20px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-critico {
+    border-color: darkred;
+}
+
+.card-desejavel {
+    border-color: darkturquoise;
+}
+
+.card h2{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+.card h4 {
+    color: #ccc;
+}
+
+.card input {
+    padding: 5px 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #ccc;
+}
+
+.card span{
+    padding: 10px 20px;
+    background-color: greenyellow;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card span:hover {
+    box-shadow: 0px 0px 20px greenyellow;
+}
+
+/* PAG - EXERCÍCIOS */
+
+/* PAG - CONTATO */
+.form {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-top: 20px solid greenyellow;
+    background-color: #1E204C;
+    box-shadow: 1px 0px 1.2px 0px #e3e3e3;
+    border-radius:3px;
+    max-width: 600px;
+    margin: auto;
+    padding:2em;
+  }
+
+  .titulo-form {
+    
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    margin-bottom: 20px;
+    border-bottom: 1px #ffffff solid;
+    padding-bottom: 10px;
+  }
+
+  .input-group { 
+    position:relative;
+    margin-bottom:30px;
+  }
+
+  .input {
+    border: 3px solid #ffffff;
+    background: none;
+    padding: 0.8em;
+    font-size: 1em;
+    color: #696969;
+  }
+
+  .input {
+    border: 3px solid #ffffff;
+    background: none;
+    resize: none;
+    padding: 0.8em;
+    font-size: 1em;
+    color: #ffffff;
+  }
+
+  .user-label {
+    position: absolute;
+    left: 15px;
+    color: #ffffff;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 350ms;
+  }
+
+  .input:focus,
+  input:valid {
+    outline: none;
+    --angle: 0deg;
+    border-bottom: 3px solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    animation: 3s rotate9234 linear infinite;
+  }
+  .input:focus,
+  input:valid {
+    outline: none;
+    --angle: 0deg;
+    border-bottom: 3px solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    animation: 3s rotate9234 linear infinite;
+  }
+
+  @keyframes rotate9234 {
+    to {
+      --angle: 360deg;
+    }
+  }
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  .input:focus~label,input:valid~label {
+    transform: translateY(-50%) scale(1);
+    background-color: #fff;
+    padding: 0 .4em;
+    color: #8000ff;
+  }
+
+
+  .btn-gradient {
+      width: auto;
+      font-size: 1em;
+      padding: 12px 25px;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+  }
+
+  .btn-gradient::before {
+   
+    position: absolute;
+    content: "";
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    left: -3px;
+    top: -3px;
+    background: linear-gradient(124deg, #e72100, #f36161, #eec647, #dfe404, #35e854, #32dfe9, #4a3df1, #e549f5, #ae07bf );
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(0px);
+    animation: move 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .btn-gradient:hover::before { opacity: 1; }
+  .btn-gradient::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #3f3f3f;;
+    left: 0;
+    top: 0;
+  }
+
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  } 
+/* PAG - CONTATO */
